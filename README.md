@@ -1,5 +1,31 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+## Jose Otalora Image Digitalization OCR
+
+A powerful document digitization platform that converts PDFs and images into clean, structured Markdown files using advanced OCR and AI formatting.
+
+### How PDF to Markdown Conversion Works
+
+When you upload a PDF, the system first uses **pdf.js** (a JavaScript PDF rendering library) to extract all the embedded text from every page of the document. This happens quickly - for a 19-page PDF, it can extract 81,787 characters in just a few seconds. The text extraction doesn't use OCR or vision models; it simply reads the text data that's already embedded in the PDF file, which is why it's fast and accurate.
+
+After extracting the raw text, the system sends it to an **AI language model** (Google Gemini or Claude) via OpenRouter API to format it into clean Markdown. The AI analyzes the text structure to identify titles, sections, lists, and paragraphs, then applies proper Markdown formatting (# for headers, ** for bold, - for lists, etc.). This AI formatting step is what takes the most time - for large documents like a 19-page PDF, it takes about 4 minutes because the model needs to read, understand, and reformat all 81,787 characters. The final result is clean, well-structured Markdown that preserves the document's hierarchy and formatting.
+
+### Features
+
+- **PDF to Markdown Conversion**: Extract and format text from multi-page PDFs
+- **Language Support**: English, Spanish, Portuguese, and German
+- **Image Merging**: Combine multiple images into a single file
+- **PDF Merging**: Merge multiple PDF documents
+- **Project Management**: Organize digitization projects
+
+### Performance
+
+- Small PDFs (1-5 pages): ~30-60 seconds
+- Medium PDFs (6-15 pages): 1-3 minutes
+- Large PDFs (16-40 pages): 3-5 minutes
+
+Processing time depends on document size and AI model availability.
+
 ## Getting Started
 
 First, run the development server:

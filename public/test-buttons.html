@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Buttons</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="p-8">
+    <h1 class="text-2xl mb-4">This is what you should see:</h1>
+    <table class="min-w-full divide-y divide-gray-300">
+        <thead class="bg-gray-50">
+            <tr>
+                <th class="px-6 py-3 text-left">Filename</th>
+                <th class="px-6 py-3 text-left">Status</th>
+                <th class="px-6 py-3 text-left">Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="px-6 py-4">cartapresidente.pdf</td>
+                <td class="px-6 py-4">
+                    <span class="inline-flex px-2 text-xs font-semibold rounded-full bg-red-100 text-red-800">failed</span>
+                </td>
+                <td class="px-6 py-4">
+                    <span class="text-gray-400 text-xs">No output available</span>
+                    <button class="text-red-600 hover:text-red-900">Delete</button>
+                </td>
+            </tr>
+            <tr class="bg-yellow-50">
+                <td class="px-6 py-4 font-bold">administracion senor otalora.pdf</td>
+                <td class="px-6 py-4">
+                    <span class="inline-flex px-2 text-xs font-semibold rounded-full bg-green-100 text-green-800">completed</span>
+                </td>
+                <td class="px-6 py-4">
+                    <div class="flex items-center space-x-3">
+                        <a href="#" class="text-indigo-600 hover:text-indigo-900 underline font-bold">View HTML</a>
+                        <span class="text-gray-400">|</span>
+                        <a href="#" class="text-indigo-600 hover:text-indigo-900 underline font-bold">Download MD</a>
+                        <span class="text-gray-400">|</span>
+                        <button class="text-red-600 hover:text-red-900 font-bold">Delete</button>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="mt-8 p-4 bg-blue-100 border border-blue-400 rounded">
+        <p class="font-bold">If you don't see the View HTML and Download MD buttons on the SECOND row (administracion senor otalora.pdf):</p>
+        <ol class="list-decimal ml-8 mt-2">
+            <li>Clear your browser cache (Ctrl+Shift+R)</li>
+            <li>Check browser console for JavaScript errors (F12)</li>
+            <li>Make sure you're looking at the correct row (the one with green "completed" status)</li>
+        </ol>
+    </div>
+</body>
+</html>
