@@ -1,8 +1,10 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Jose Otalora Image Digitalization OCR
+## MONDOS - Francisc Money Documents Systems
 
 A powerful document digitization platform that converts PDFs and images into clean, structured Markdown files using advanced OCR and AI formatting.
+
+**Project conceived, created and designed by Francisco Cordoba Otalora.**
 
 ### How PDF to Markdown Conversion Works
 
