@@ -1,10 +1,17 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## MONDOS - Francisc Money Documents Systems
-
-A powerful document digitization platform that converts PDFs and images into clean, structured Markdown files using advanced OCR and AI formatting.
+## MONDOS - Francisco Money Documents Systems
 
 **Project conceived, created and designed by Francisco Cordoba Otalora.**
+
+I built this project to help me in all the process of converting files in the easiest possible way. That's why it includes multiple functionalities:
+
+1. **PDF Merger** - Combine multiple PDF documents into a single file for easier management
+2. **Image to PDF** - Convert and merge multiple images (JPG, PNG, GIF) into a single PDF document
+3. **PDF to Markdown** - Extract and format text from multi-page PDFs into clean Markdown, perfect for LLMs
+4. **Project Management** - Organize digitization projects with language support (English, Spanish, Portuguese, German)
+
+The goal is to make document conversion seamless, whether you're merging files, converting images, or preparing documents for AI processing.
 
 ### How PDF to Markdown Conversion Works
 

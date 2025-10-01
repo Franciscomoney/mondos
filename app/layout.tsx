@@ -3,7 +3,7 @@ import Link from "next/link";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Francisc Money Documents Systems",
+  title: "Francisco Money Documents Systems",
   description: "Transform images and PDFs into readable HTML files",
 };
 
@@ -20,7 +20,7 @@ export default function RootLayout({
             <div className="flex justify-between h-16">
               <div className="flex items-center">
                 <Link href="/" className="text-xl font-semibold text-gray-900 hover:text-indigo-600 transition-colors">
-                  Francisc Money Documents Systems
+                  Francisco Money Documents Systems
                 </Link>
               </div>
               <div className="flex items-center space-x-4">
